@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Red Ledger — The United Repository </title>
+<title>The Red Ledger — A United Repository </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -505,7 +505,7 @@ body.edit-mode .data-toolbar{display:flex;}
     <svg class="crest" viewBox="0 0 60 68" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M30 2 L56 14 V36 C56 52 44 62 30 66 C16 62 4 52 4 36 V14 Z" fill="#DA291C" stroke="#FBE122" stroke-width="2"/>
       <path d="M30 8 L50 17 V35 C50 47 41 55 30 58.5 C19 55 10 47 10 35 V17 Z" fill="#14110f"/>
-      <text x="30" y="40" font-family="Archivo Black, sans-serif" font-size="22" fill="#F2EDE2" text-anchor="middle">M</text>
+      <text x="30" y="40" font-family="Poppins, sans-serif" font-size="22" fill="#F2EDE2" text-anchor="middle">M</text>
     </svg>
     <div class="brand-text">
       <h1>THE RED <span>LEDGER</span></h1>
@@ -853,7 +853,7 @@ function buildMomentumSVG(season){
 
   if (gws.length === 0){
     return '<svg class="chart-svg" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">' +
-      '<text x="' + (W/2) + '" y="' + (H/2) + '" font-family="Archivo Expanded, sans-serif" font-size="18" fill="#cfc8b6" text-anchor="middle">Season not yet underway — add fixtures to start the line.</text>' +
+      '<text x="' + (W/2) + '" y="' + (H/2) + '" font-family="Poppins, sans-serif" font-size="18" fill="#cfc8b6" text-anchor="middle">Season not yet underway — add fixtures to start the line.</text>' +
       '</svg>';
   }
 
@@ -882,7 +882,7 @@ function buildMomentumSVG(season){
     dots += '<circle class="gwdot" cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="4.2" fill="' + colorFor(p.result) + '" stroke="#14110f" stroke-width="1.3" data-gw="' + p.gw + '" data-opp="' + p.opp + '" data-score="' + p.score + '" data-venue="' + p.venue + '" data-result="' + p.result + '" data-cum="' + p.cum + '" style="cursor:pointer;"/>';
   });
 
-  const watermark = '<text x="' + (W-90) + '" y="' + (H-260) + '" font-family="Archivo Black, sans-serif" font-size="160" fill="rgba(218,41,28,0.05)" text-anchor="middle">M</text>';
+  const watermark = '<text x="' + (W-90) + '" y="' + (H-260) + '" font-family="Poppins, sans-serif" font-size="160" fill="rgba(218,41,28,0.05)" text-anchor="middle">M</text>';
 
   return '' +
   '<svg class="chart-svg" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cumulative points across the season">' +
@@ -892,7 +892,7 @@ function buildMomentumSVG(season){
     '<line x1="' + padL + '" y1="' + (H-padB) + '" x2="' + (W-padR) + '" y2="' + (H-padB) + '" stroke="rgba(242,237,226,0.18)" stroke-width="1.5"/>' +
     gwLabels +
     '<text x="' + (W/2) + '" y="' + (H-1) + '" font-family="Space Mono, monospace" font-size="10" fill="#9c948a" text-anchor="middle">GAMEWEEK</text>' +
-    '<path d="' + pathD + '" fill="none" stroke="#DA291C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>' +
+    '<path d="' + pathD + '" fill="none" stroke="#FFFFFG" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>' +
     '<defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>' +
     dots +
   '</svg>' +
